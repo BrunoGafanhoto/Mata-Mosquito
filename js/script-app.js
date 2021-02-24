@@ -60,8 +60,8 @@ var cronometro = setInterval( function(){
 		
 			}
 
-		var posicaoX = Math.floor(Math.random() * largura) -110; //-90 para nao ultrapassar a tela
-		var posicaoY = Math.floor(Math.random() * altura) -110; //criando rolagens desnecessarias
+		var posicaoX = Math.floor(Math.random() * largura) -160; //-90 para nao ultrapassar a tela
+		var posicaoY = Math.floor(Math.random() * altura) -160; //criando rolagens desnecessarias
 
 				//solucionando números menores q 0
 			while (posicaoX < 0 || posicaoY < 0){
