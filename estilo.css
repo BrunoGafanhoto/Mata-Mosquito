@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+html {
+	cursor: url('imagens/mata_mosca.png') 30 30 , auto;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-image: url('imagens/bg.jpg');
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: 2000px 2000px;*/
+
+
+}
+
+@media (min-height:  430px ) and (max-width: 1200px) {
+
+	body{
+		background-size: 2300px 2300px;
+	} 
+
+}
+
+.mosquito1{
+	width: 50px;
+	height: 50px;
+}
+
+.mosquito2{
+	width: 80px;
+	height: 80px;
+}
+
+.mosquito3{
+	width: 110px;
+	height: 110px;
+}
+
+.ladoA {
+	transform: scaleX(1);
+}
+.ladoB {
+	transform: scaleX(-1); /* INVERTENDO A IMAGEM */
+}
+
+.opac{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255,255,255,0.33);
+}
+
+.painel{
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	bottom: 0px;
+	border-top: 1px solid #fff;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.vidas {
+	float: left;
+}
+
+.cronometro {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+/*PAGINA DE GAME_OVER*/
+.textoReinicio {
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 5px;
+
+}
+
