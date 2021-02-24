@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Mata Mosquito - GAME OVER</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
 	</head>
 	<body>
@@ -13,7 +13,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="d-flex justify-content-center">
-						<img src="imagens/game_over.png" />
+						<img src="../imagens/game_over.png" />
 					</div>
 				</div>
 			</div>
@@ -22,13 +22,13 @@
 			<div class="row">
 				<div class="col-6 pr-0">
 					<div class="d-flex justify-content-end">
-						<button id="btn-inicio" onclick="window.location.href='inicio.html'" style="border: 2px solid white; cursor: url('imagens/mata_mosca.png') 30 30 , auto;" type="button" class="btn-lg btn-outline-light"> Voltar ao início</button>	
+						<button id="btn-inicio" onclick="window.location.href='../inicio.html'" style="border: 2px solid white; cursor: url('../imagens/mata_mosca.png') 30 30 , auto;" type="button" class="btn-lg btn-outline-light"> Voltar ao início</button>	
 					</div>
 				</div>
 
 				<div class="col-6 pl-1">
 					<div class="d-flex ">
-						<button id="btn-reiniciar" onclick="reiniciar()" style="border: 2px solid white; cursor: url('imagens/mata_mosca.png') 30 30 , auto;"  type="button" class="btn-lg btn-outline-light">Reiniciar o jogo</button>	
+						<button id="btn-reiniciar" onclick="reiniciar()" style="border: 2px solid white; cursor: url('../imagens/mata_mosca.png') 30 30 , auto;"  type="button" class="btn-lg btn-outline-light">Reiniciar o jogo</button>	
 					</div>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 								document.body.appendChild(reinicio);
 								contagem--;
 							}else {
-								window.location.href="file:///C:/Users/Bruno/Desktop/projetos/CURSO%20UDEMY/Javascript/app.html?" + nivel;
+								window.location.href="app.html?" + nivel;
 							}
 					} ,1000);
 				

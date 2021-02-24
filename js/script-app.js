@@ -35,7 +35,7 @@ var cronometro = setInterval( function(){
 	if( tempo < 0){
 			clearInterval(cronometro);
 			clearInterval(criaMosquito);
-			window.location.href="vitoria.html";
+			window.location.href="vitoria.html?" + nivel;
 
 			} 
 
@@ -54,7 +54,7 @@ var cronometro = setInterval( function(){
 				document.getElementById('mosquito').remove();
 
 				if(vidas <= 3){
-					document.getElementById('v' + vidas).src="imagens/coracao_vazio.png";
+					document.getElementById('v' + vidas).src="../imagens/coracao_vazio.png";
 					vidas++
 				}
 		
@@ -81,7 +81,7 @@ var cronometro = setInterval( function(){
 		//criar o elemento html
 	//y altura e x largura
 		var mosquito = document.createElement('img'); //elemento img 	
-		mosquito.src = 'imagens/mosquito.png' //setando o caminho da imagem;
+		mosquito.src = '../imagens/mosquito.png' //setando o caminho da imagem;
 		mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio();
 		mosquito.style.left = posicaoX + 'px'; //aplicando a largura randomica ao mosquito
 		mosquito.style.top = posicaoY + 'px'; //aplicando a altura randomica ao mosquito
@@ -113,7 +113,7 @@ var criaMosquito = setInterval(function(){
   setInterval(function(){
   	 if(vidas > 3){
 		vidas = 1;
-		window.location.href="file:///C:/Users/Bruno/Desktop/projetos/CURSO%20UDEMY/Javascript/game-over.html?" + nivel;
+		window.location.href="game-over.html?" + nivel;
 
 	}
 },tempoGameOver);
